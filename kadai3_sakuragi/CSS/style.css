@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ここから課題 */
+
+/* work2-1 */
+
+.servis {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 50px 0 50px 0;
+  background-color: #eeeeee;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: #26896d;
+}
+
+.servis-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.servis-item {
+  width: 32%;
+}
+
+h2 {
+  padding: 10px;
+  border-left: solid 8px #26896d;
+  color: #26896d;
+}
+
+.servis-text {
+  padding: 10px;
+  background-color: white;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* work2-2 */
+
+@media screen and (max-width: 400px) {
+  .servis {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .servis-list {
+    display: block;
+    padding: 0;
+  }
+
+  .servis-item {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
