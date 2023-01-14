@@ -46,7 +46,7 @@ img {
 
 /* work2-1 */
 
-.servis {
+.service {
   max-width: 960px;
   margin: 0px auto;
   padding: 50px 0 50px 0;
@@ -59,13 +59,13 @@ h1 {
   color: #26896d;
 }
 
-.servis-list {
+.service-list {
   display: flex;
   justify-content: space-between;
   padding: 30px;
 }
 
-.servis-item {
+.service-item {
   width: 32%;
 }
 
@@ -75,7 +75,7 @@ h2 {
   color: #26896d;
 }
 
-.servis-text {
+.service-text {
   padding: 10px;
   background-color: white;
 }
@@ -87,7 +87,7 @@ p {
 /* work2-2 */
 
 @media screen and (max-width: 400px) {
-  .servis {
+  .service {
     padding: 30px 10px;
   }
 
@@ -95,12 +95,12 @@ p {
     padding-bottom: 30px;
   }
 
-  .servis-list {
+  .service-list {
     display: block;
     padding: 0;
   }
 
-  .servis-item {
+  .service-item {
     width: 100%;
     padding-bottom: 20px;
   }
