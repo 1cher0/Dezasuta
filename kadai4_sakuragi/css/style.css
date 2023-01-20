@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4f260b;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ヘッダー */
+
+.header_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 10px 7% 0 3%;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  width: 226px;
+}
+
+.pc_nav ul {
+  display: flex;
+}
+
+.pc_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  text-align: center;
+}
+
+.main {
+  background-color: #e8d9bf;
+}
+
+.top {
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 95px;
+  text-align: center;
+}
+
+.catch1 {
+  font-size: 30px;
+}
+
+.catch2 {
+  padding-top: 55px;
+  font-size: 82px;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+
+.copy {
+  padding-top: 15px;
+  font-size: 23px;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px 95px 10px;
+}
+
+.about_head {
+  max-width: 500px;
+}
+
+.about_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_block {
+  max-width: 42%;
+}
+
+.about_block h2 {
+  max-width: 272px;
+  padding-top: 55px;
+}
+
+.about_title {
+  padding-top: 50px;
+  font-size: 44px;
+  line-height: 1.38;
+}
+
+.about_text {
+  padding-top: 25px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.menu h2,
+.gallery h2,
+.event h2,
+.access h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px 75px 10px;
+}
+
+.menu h2 {
+  max-width: 150px;
+  padding-bottom: 35px;
+}
+
+.menu_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_drink,
+.menu_food,
+.menu_sweets {
+  width: 30%;
+}
+
+.menu_title {
+  color: #d30202;
+  margin-top: -12px;
+  margin-left: 10px;
+  font-size: 38px;
+}
+
+.menu_text {
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 1.47;
+  text-align: justify;
+}
+
+.gallery {
+  margin: 0 auto;
+}
+.gallery h2 {
+  max-width: 245px;
+  padding-bottom: 15px;
+}
+
+.gallery_block {
+  width: 100%;
+  display: block;
+}
+
+.gallery_item {
+  float: left;
+}
+
+.event {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px 70px 10px;
+}
+
+.event h2 {
+  max-width: 173px;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.event_list {
+  padding: 40px 150px;
+  color: #ffffff;
+  border: solid 3.7px #4f260b;
+  font-size: 23px;
+}
+
+.event_item {
+  display: flex;
+  align-items: center;
+  line-height: 1.95;
+}
+
+.event_time {
+  text-align: left;
+  padding-right: 55px;
+}
+.event_link {
+  text-decoration: underline solid 1px #4f260b;
+  text-align: left;
+}
+
+.access h2 {
+  max-width: 213px;
+  padding-bottom: 40px;
+}
+
+.access_map iframe {
+  width: 100%;
+  height: 470px;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 75px 25%;
+}
+
+.footer_wrap {
+  display: flex;
+  max-width: 1000px;
+}
+
+.footer_wrap h1 {
+  max-width: 226px;
+  padding-right: 60px;
+}
+
+.footer_content {
+  padding-bottom: 75px;
+}
+
+.footer_content p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.95;
+}
+
+.copyright {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.pagetop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
+}
