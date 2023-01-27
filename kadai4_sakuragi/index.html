@@ -8,16 +8,30 @@
     <title>第4回課題</title>
     <meta name="description" content="デザインカフェのサイトです">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header" class="header">
         <div class="header_slider">
-            <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+            <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_first-100.jpg" alt="店内の様子">
+            </picture>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -32,15 +46,28 @@
         <div class="top">
             <p class="catch1">Have a happy day From a cup of cofee.</p>
             <p class="catch2">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-            <p class="copy">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <p class="copy">毎日を丁寧に大切に過ごしたい。<br class="sp_only">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br
+                    class="sp_only">こだわりのコーヒーを提供したい。</p>
         </div>
         <section id="about" class="about">
-            <div class="about_wrap">
+            <div class="about_wrap pc_only">
                 <div class="about_head">
                     <img src="images/kadai4_sozai/about@2x.png" alt="こだわりのコーヒー">
                 </div>
                 <div class="about_block">
                     <h2><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
+                    <p class="about_title">私たちが提供する<br>こだわりのコーヒー</p>
+                    <p class="about_text">
+                        サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。
+                    </p>
+                </div>
+            </div>
+            <div class="about_wrap sp_only">
+                <h2><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
+                <div class="about_head">
+                    <img src="images/about_us@2x-100.jpg" alt="こだわりのコーヒー">
+                </div>
+                <div class="about_block">
                     <p class="about_title">私たちが提供する<br>こだわりのコーヒー</p>
                     <p class="about_text">
                         サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセーじを文章で紹介します。
@@ -93,15 +120,15 @@
             <div class="event_list">
                 <ul>
                     <li class="event_item">
-                        <time datetime="2020-06-23">2020.06.23</time>
+                        <time datetime="2020-06-23">2020.06.23</time><br class="sp_only">
                         <a href="" class="event_link">7月はイベント出店のため()/()お休みします</a>
                     </li>
                     <li class="event_item">
-                        <time datetime="2020-03-15">2020.03.15</time>
+                        <time datetime="2020-03-15">2020.03.15</time><br class="sp_only">
                         <a href="" class="event_link">春の新商品新発売。話題のあのブランドとコラボ</a>
                     </li>
                     <li class="event_item">
-                        <time datetime="2020-02-06">2020.02.06</time>
+                        <time datetime="2020-02-06">2020.02.06</time><br class="sp_only">
                         <a href="" class="event_link">コーヒーの日で30%OFFイベントを開催[3日間限定]</a>
                     </li>
                 </ul>
@@ -125,7 +152,7 @@
             <p class="footer_content">
                 OPEN 18:00 / CLOSE 24:00<br>
                 〒150-0022<br>
-                東京都渋谷区東京南123デザインビルB1br<br>
+                東京都渋谷区東京南123デザインビルB1<br>
                 MAIL:info@designcafe.tokyo
             </p>
         </div>
@@ -134,6 +161,16 @@
             <a href="#header"><img src="images/to_top@2x.png" alt="ページのトップへ戻る"></a>
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
+        });
+    </script>
+
 </body>
 
 </html>
