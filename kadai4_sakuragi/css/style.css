@@ -82,6 +82,22 @@ img {
   text-align: center;
 }
 
+.header_slider img {
+  width: 100%;
+}
+
+/* スライダー調整 */
+.slick-dots {
+  bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
 .sp_btn,
 .sp_nav {
   display: none;
@@ -401,7 +417,7 @@ main {
   .about_wrap {
     align-items: center;
   }
-  .about_block .about_title {
+  .about_title {
     font-size: 39px;
   }
 }
@@ -448,35 +464,30 @@ main {
   .about {
     padding: 0 0 55px 0;
   }
-  .about_wrap .sp_only {
-    max-width: 767px;
-    padding: 0;
-  }
-  .sp_only h2 {
-    width: 42%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-  }
-  .sp_only .about_head {
-    width: 100%;
-    padding: 0;
-  }
-  .sp_only .about_block {
+  .about_block {
     width: 100%;
     padding: 0 23px;
     box-sizing: border-box;
   }
-  .sp_only .about_title {
+  .about_block h2 {
+    width: 42%;
+    padding-top: 0;
+    padding-bottom: 13px;
+    margin: 0 auto;
+  }
+  .about_title {
+    padding-top: 35px;
     font-size: 36px;
     line-height: 1.25;
   }
-  .sp_only .about_text {
+  .about_text {
+    padding-top: 19px;
+    font-size: 16px;
     line-height: 1.75;
   }
 
   /* MENU */
   .menu {
-    width: 100%;
     padding: 0 0 30px 0;
   }
   .menu h2 {
@@ -513,7 +524,6 @@ main {
 
   /* EVENT */
   .event {
-    width: 100%;
     padding: 0 20px 27px 20px;
     box-sizing: border-box;
   }
@@ -530,6 +540,7 @@ main {
     padding-right: 0px;
   }
   .event_link {
+    display: block;
     padding: 0px;
     white-space: nowrap;
     overflow: hidden;
@@ -547,7 +558,7 @@ main {
 
   /* footer */
   .footer {
-    padding: 40px 20px 25px 20px;
+    padding: 40px 10px 25px;
   }
   .footer_wrap {
     display: block;
@@ -555,12 +566,17 @@ main {
     box-sizing: border-box;
   }
   .footer_logo {
-    width: 60%;
+    width: 68%;
     padding-bottom: 27px;
   }
   .footer_content {
     padding-bottom: 40px;
     font-size: 18px;
     line-height: 1.72;
+  }
+  .pagetop {
+    right: 12px;
+    bottom: 12px;
+    width: 100px;
   }
 }
