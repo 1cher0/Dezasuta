@@ -96,19 +96,22 @@
             <h2><img src="images/gallery@2x.png" alt="GALLERY"></h2>
             <div class="gallery_block">
                 <div class="gallery_img">
-                    <img src="images/pc_gallary_01-100.jpg" alt="コーヒーの写真" class="gallery_item">
+                    <img src="images/pc_gallary_01-100.jpg" alt="コーヒーの写真">
                 </div>
                 <div class="gallery_img">
-                    <img src="images/pc_gallary_02-100.jpg" alt="店舗内装1" class="gallery_item">
+                    <img src="images/pc_gallary_02-100.jpg" alt="店舗内装1">
                 </div>
                 <div class="gallery_img">
-                    <img src="images/pc_gallary_03-100.jpg" alt="店舗内装2" class="gallery_item">
+                    <img src="images/pc_gallary_03-100.jpg" alt="店舗内装2">
                 </div>
                 <div class="gallery_img">
-                    <img src="images/pc_gallary_04-100.jpg" alt="自家製コーヒー豆" class="gallery_item">
+                    <img src="images/pc_gallary_04-100.jpg" alt="自家製コーヒー豆">
                 </div>
                 <div class="gallery_img">
-                    <img src="images/pc_gallary_05-100.jpg" alt="店舗内装3" class="gallery_item">
+                    <img src="images/pc_gallary_05-100.jpg" alt="店舗内装3">
+                </div>
+                <div class="gallery_img">
+                    <img src="images/pc_gallary_05-100.jpg" alt="店舗内装3">
                 </div>
             </div>
         </section>
@@ -172,7 +175,20 @@
                 dots: true,
                 arrows: false,
             });
-
+            $('.gallery_block').slick({
+                speed: 500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
         });
     </script>
 
