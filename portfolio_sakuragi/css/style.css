@@ -1,0 +1,151 @@
+/* ファーストビュー */
+.top {
+  position: relative;
+}
+.top_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+.top_back {
+  width: 100%;
+  height: 100vh;
+}
+
+/* about */
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 96px;
+}
+.about_message {
+  padding-left: 65px;
+  width: 60%;
+}
+.about_ttl {
+  text-align: left;
+  font-size: 24px;
+  color: #476b6b;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+.about_text {
+  width: 75%;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+.about_visual {
+  align-items: center;
+  width: 30%;
+}
+
+/* view moreボタン */
+a.btn_more {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn_more:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 15px;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  border-radius: 0 50% 50% 0;
+  background: #000;
+}
+
+a.btn_more:hover:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  line-height: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  content: "\f061";
+  -webkit-transform: translateX(460%) translateY(0.5rem);
+  transform: translateX(460%) translateY(0.5rem);
+
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* service(できること) */
+.service {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 96px 0;
+}
+.service h2 {
+  width: 20%;
+  margin: 0 auto;
+}
+.service_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 48px;
+}
+.service_content {
+  width: 38%;
+}
+.service h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.service_icon {
+  width: 26%;
+  align-items: center;
+  margin: 0 auto;
+}
+.service p {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding-top: 8px;
+}
+.service h4 .service img .service p {
+  text-align: center;
+}
+
+/* works */
+.works {
+  background: rgba(71, 107, 107, 0.3);
+  width: 100%;
+  height: 700px;
+}
+.works h2 {
+  width: 18%;
+  padding-top: 100px;
+  margin-left: 65px;
+}
+.works ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 65px;
+}
+.works li {
+  width: 30%;
+}
