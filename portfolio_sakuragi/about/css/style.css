@@ -150,39 +150,6 @@ h3 {
   top: -2px;
 }
 
-/* homeボタン */
-a.btn_home {
-  display: block;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  position: relative;
-  width: 100px;
-  margin: 0 0 0 auto;
-  padding: 1rem 4rem;
-  color: #476b6b;
-  background: rgba(71, 107, 107, 0.3);
-  transition: 0.3s ease-in-out;
-}
-a.btn_home::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-  border: 2px solid #476b6b;
-  transition: 0.2s;
-}
-a.btn_home:hover {
-  background: #476b6b;
-  color: #fff;
-}
-a.btn_home:hover::before {
-  top: 0;
-  left: 0;
-}
-
 /* フッター */
 footer {
   margin-top: 64px;
