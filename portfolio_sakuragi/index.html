@@ -16,33 +16,43 @@
 <body>
     <!-- ヘッダー -->
     <header id="header" class="header">
-        <div class="header_box"><span></span></div>
+        <div class="header_ttl image_link">
+            <a href="#header"><img src="images/ttl.png" alt="HIDEO SAKURAGI PORTFOLIO"></a>
+        </div>
+        <div class="header_box pc_only"><span></span></div>
+        <div class="pagetop_pc pc_only">
+            <a href="#header"><img src="images/pagetop_pc.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="pagetop_sp sp_only">
+            <a href="#header"><img src="images/pagetop_sp.png" alt="ページのトップへ戻る"></a>
+        </div>
         <div class="btn_nav"><span></span></div>
         <nav class="menu">
             <ul>
                 <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
+                <li><a href="about/index.html">about</a></li>
                 <li><a href="#service">service</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="works_top/index.html">works</a></li>
+                <li><a href="contact/index.html">contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- ファーストビュー -->
         <div id="home" class="home">
-            <img src="./images/top_logo/top_logo.svg" alt="ロゴ" class="top_logo">
-            <img src="images/main_pc.jpg" alt="トップ画像" class="top_back">
+            <img src="./images/top_logo/top_logo.svg" alt="ロゴ" class="logo">
+            <img src="images/main_pc.jpg" alt="トップ画像" class="fv">
         </div>
         <!-- about(自己紹介) -->
         <div id="about" class="about">
             <div class="about_wrap">
+                <img src="images/about_visual@2x.png" alt="" class="sp_only">
                 <div class="about_message">
                     <img src="images/anout_line_01.png" alt="装飾" class="message_line01">
                     <img src="images/about_line_02.png" alt="装飾" class="message_line02">
-                    <p class="about_ttl">デザインを通して、お客様のありたい姿を叶えたい<br>お客様の前身・繁栄のきっかけに</p>
+                    <p class="about_ttl">デザインを通して、<br class="sp_only">お客様のありたい姿を叶えたい<br>お客様の前身・繁栄のきっかけに。</p>
                     <p class="about_text">
-                        初めまして。<br>1993年生まれ、広島県出身の桜木と申します。<br>前職では株式会社リクルートで、主にフォットペッパービューティーを活用した美容サロン様の新規集客・売上UPのサポートをしておりました
+                        初めまして。<br>1993年生まれ、広島県出身の桜木英雄と申します。<br>前職では株式会社リクルートで、主にフォットペッパービューティーを活用した美容サロン様の新規集客・売上UPのサポートをしておりました
                     </p>
                     <p></p>
                     <p class="about_text">
@@ -50,8 +60,8 @@
                     </p>
                 </div>
                 <div class="about_visual">
-                    <div><img src="images/about_visual@2x.png" alt=""></div>
-                    <a href="" class="btn_more">view more</a>
+                    <img src="images/about_visual@2x.png" alt="" class="pc_only">
+                    <div class="btn_more"><a href="about/index.html">view more</a></div> <!--moreボタン-->
                 </div>
             </div>
         </div>
@@ -60,7 +70,7 @@
             <h2><img src="images/service_ttl.png" alt="Service(できること)"></h2>
             <div class="service_wrap">
                 <div class="service_content">
-                    <img src="images/service_No._01.png" alt="01" class="service_no">
+                    <img src="images/service_No._01.png" alt="01" class="service_no1">
                     <h3>デザイン</h3>
                     <div class="service_icon">
                         <img src="images/service_01.png" alt="アイコン(デザイン)">
@@ -69,7 +79,7 @@
                     </p>
                 </div>
                 <div class="service_content">
-                    <img src="images/service_No._02.png" alt="02" class="service_no">
+                    <img src="images/service_No._02.png" alt="02" class="service_no2">
                     <h3>コーディング</h3>
                     <div class="service_icon">
                         <img src="images/service_02.png" alt="アイコン(コーディング)">
@@ -81,16 +91,37 @@
         </section>
         <!-- works(制作実績) -->
         <section id="works" class="works">
-            <h2><img src="images/works_ttl.png" alt="Works(制作実績)"></h2>
-            <ul class="works_wrap">
-                <li><img src="images/works_life@2x.png" alt="美容室「LIFE hair design」" class="works_content"></li>
-                <li><img src="images/works_designcafe@2x.png" alt="「design cafe」" class="works_content"></li>
-                <li><img src="images/works_workers@2x.png" alt="コワーキングスペース「Workers」" class="works_content"></li>
-            </ul>
-            <div class="works_item">
-                <!-- ここにスライダーを記述 -->
+            <div class="banner_slide">
+                <img src="images/works_banner.png" alt="HIDEO SAKURAGI'S Works">
+                <img src="images/works_banner.png" alt="HIDEO SAKURAGI'S Works">
             </div>
-            <a href="" class="btn_more">view more</a>
+            <h2><img src="images/works_ttl.png" alt="Works(制作実績)"></h2>
+            <div class="works_block">
+                <div class="works_img">
+                    <a href="works_detail/web_life.html"><img src="images/works_life@2x.png"
+                            alt="美容室「LIFE hair design」"></a>
+                </div>
+                <div class="works_img">
+                    <a href="works_detail/web_designcafe.html"><img src="images/works_designcafe@2x.png"
+                            alt="カフェ「design cafe」"></a>
+                </div>
+                <div class="works_img">
+                    <a href="works_detail/web_workers.html"><img src="images/works_workers@2x.png"
+                            alt="コワーキングスペース「Workers」"></a>
+                </div>
+                <div class="works_img">
+                    <a href="works_detail/banner_dx-burger01.html"><img src="images/banner_dxburger01.jpg"
+                            alt="「DXバーガー」"></a>
+                </div>
+                <div class="works_img"><a href="works_detail/banner_dx-burger02.html"><img
+                            src="images/banner_dxburger02.jpg" alt="「DXバーガー」"></a>
+                </div>
+                <div class="works_img">
+                    <a href="works_detail/banner_trrrrip.html"><img src="images/banner_trrrrip@2x.jpg"
+                            alt="「DXバーガー」"></a>
+                </div>
+            </div>
+            <div class="btn_more"><a href="works_top/index.html">view more</a></div> <!--moreボタン-->
         </section>
     </main>
     <!-- フッター -->
@@ -100,14 +131,53 @@
             <p class="copyright">©2023 HIDEO SAKURAGI</p>
         </div>
     </footer>
-    <!-- ここからjQueryの記述 -->
 
+    <!-- ここからjQueryの記述 -->
     <script>
-        // ハンバーガーメニュー
         $(function () {
-            $('.btn_nav, menu li').on('click', function () {
+            // ファーストビュー
+            $(window).scroll(function () {
+                var scroll = $(this).scrollTop();
+                var scrollScale = scroll / 10;
+                console.log(scrollScale);
+                if (scrollScale > 0.5) {
+                    $('.logo img').css('transform', 'scale(' + scrollScale + ')');
+                }
+                if (scrollScale > 5) {
+                    $('.fv').css('position', 'static');
+                }
+            });
+
+            // ハンバーガーメニュー
+            $('.btn_nav, .menu li').on('click', function () {
                 $('.btn_nav').toggleClass('open');
                 $('.menu').fadeToggle();
+            });
+
+            // ページのトップに戻る
+            $('.pagetop').click(function () {
+                var speed = 500; // スクロール速度(ミリ秒)
+                var href = $(this).attr("href");
+                var target = $(href == "#header" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+
+            // works 画像スライド
+            $('.works_block').slick({
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
             });
         });
     </script>

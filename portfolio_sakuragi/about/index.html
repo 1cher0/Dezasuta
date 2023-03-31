@@ -16,15 +16,24 @@
 <body>
     <!-- ヘッダー -->
     <header id="header" class="header">
-        <div class="header_box"><span></span></div>
+        <div class="header_ttl image_link">
+            <a href="../index.html#header"><img src="../images/ttl.png" alt="HIDEO SAKURAGI PORTFOLIO"></a>
+        </div>
+        <div class="header_box pc_only"><span></span></div>
+        <div class="pagetop_pc pc_only">
+            <a href="#header"><img src="../images/pagetop_pc.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="pagetop_sp sp_only">
+            <a href="#header"><img src="../images/pagetop_sp.png" alt="ページのトップへ戻る"></a>
+        </div>
         <div class="btn_nav"><span></span></div>
         <nav class="menu">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#service">service</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="../index.html#home">home</a></li>
+                <li><a href="../about/index.html">about</a></li>
+                <li><a href="../index.html#service">service</a></li>
+                <li><a href="../works_top/index.html">works</a></li>
+                <li><a href="../contact/index.html">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -48,11 +57,12 @@
                     </div>
                 </div>
                 <div class="about_list02">
+                    <img src="images/about_Illust_02.png" alt="webデザイナーを目指した理由" class="sp_only">
                     <div class="about_list02_text">
-                        <h2>なぜWEBデザイナーを目指したのか？</h2>
+                        <h2>なぜWEBデザイナーを<br class="sp_only">目指したのか？</h2>
                         <p>なぜwebデザイナーを目指したのか？理由は2つあります。<br>【1つ目】は、前述のように、前職にて私はホットペッパービューティーを通して毎月50件以上の美容サロン様のありたい姿(夢・目標)や課題と向き合ってきました。昨今、SNSの発達などもあり多種多様な広告手法がありますが、お客様によって適切な媒体は異なると感じています。自身が制作側に立ち、デザインしたものを通すことで多角的なご提案やよりお客様が必要とするものを届けたいと考えるようになりました。<br>【2つ目】は、変化の激しいこの時代において、「専門スキルを持つ」ことの意義を感じたためです。その中でも、①現在ネット社会であること②自身がクリエイティブなことに関心があったこと③パソコン1台で価値を生み出せることからwebデザイナーへの道を歩むことを決意しました。
                     </div>
-                    <img src="images/about_Illust_02.png" alt="webデザイナーを目指した理由">
+                    <img src="images/about_Illust_02.png" alt="webデザイナーを目指した理由" class="pc_only">
                 </div>
                 <div class="about_list03">
                     <h2>私が目指すビジョン</h2>
@@ -86,53 +96,6 @@
                     <p>webサイトにスライダーやスムーススクロール、ドロップダウンなどを初めとする動きを付けることができます。</p>
                 </li>
             </ul>
-            <!-- アコーディオン -->
-            <div class="container">
-                <!-- Acordion container -->
-                <div class="panel-group" id="accordion">
-                    <!-- First item -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse1">
-                                    「桜木英雄」の強み・弱み <i
-                                        class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span
-                                            class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse">
-                            <div class="panel-body"> Lorem ipsum </div>
-                        </div>
-                    </div>
-                    <!-- Second item -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse2">
-                                    「桜木英雄」がWEB デザイナーとして活かせる能力 <i
-                                        class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span
-                                            class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body"> Lorem ipsum 2 </div>
-                        </div>
-                    </div>
-                    <!-- Third item -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse3">
-                                    「桜木英雄」の好きなこと・物 <i
-                                        class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span
-                                            class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body"> Lorem ipsum 3 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- HOME ボタン -->
-            <a href="../index.html#home" class="btn_home">Home</a>
         </div>
     </main>
     <!-- フッター -->
@@ -150,16 +113,6 @@
                 $('.menu').fadeToggle();
             });
         });
-
-        // アコーディオン
-        function toggleChevron(e) {
-            $(e.target)
-                .prev('.panel-heading')
-                .find("i.indicator")
-                .toggleClass('glyphicon-chevron-down-custom glyphicon-chevron-up-custom');
-        }
-        $('#accordion').on('hidden.bs.collapse', toggleChevron);
-        $('#accordion').on('shown.bs.collapse', toggleChevron);
     </script>
 </body>
 

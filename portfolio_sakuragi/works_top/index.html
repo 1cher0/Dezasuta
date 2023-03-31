@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDEO SAKURAGI PORTFOLIO</title>
+    <meta name="description" content="英雄のポートフォリオサイト(worksのtopページ)">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header id="header" class="header">
+        <div class="header_ttl image_link">
+            <a href="../index.html#header"><img src="../images/ttl.png" alt="HIDEO SAKURAGI PORTFOLIO"></a>
+        </div>
+        <div class="header_box pc_only"><span></span></div>
+        <div class="pagetop_pc pc_only">
+            <a href="#header"><img src="../images/pagetop_pc.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="pagetop_sp sp_only">
+            <a href="#header"><img src="../images/pagetop_sp.png" alt="ページのトップへ戻る"></a>
+        </div>
+        <div class="btn_nav"><span></span></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html#home">home</a></li>
+                <li><a href="../about/index.html">about</a></li>
+                <li><a href="../index.html#service">service</a></li>
+                <li><a href="../works_top/index.html">works</a></li>
+                <li><a href="../contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="works_top">
+            <h1><img src="images/works_ttl.png" alt="Works"></h1>
+            <!-- ここからタブの記述 -->
+            <ul id="tab-area" class="tab-area">
+                <li class="tab active">webサイト</li>
+                <li class="tab">バナー広告</li>
+                <li class="tab">グラフィックデザイン</li>
+            </ul>
+            <div class="panel-area"> <!--タブ(webサイト)-->
+                <div class="panel active">
+                    <h2>webサイト</h2>
+                    <p>コーポレートサイトやランディングページ、<br class="sp_only">ポートフォリオサイトの制作実績です。</p>
+                    <ul>
+                        <li>
+                            <div class="works_item image_link">
+                                <a href="../works_detail/web_life.html"><img src="images/works_life@2x.png"
+                                        alt="モックアップ画像"></a>
+                            </div>
+                            <div class="item_text">
+                                <h3>美容室「LIFE hair design」</h3>
+                                <h4>LP型コーポレートサイト</h4>
+                                <div class="read-more">
+                                    <p>美容室「LIFE
+                                        hairdesign」様(架空)のLP型コーポレートサイトです。素材集めおよびデザインまでを担当しています。メインターゲットを20代後半〜30代/女性/主婦とし、店舗のイメージカラーであるピンクを基調として落ちついた印象のサイトにしました。
+                                    </p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        続きを読む
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="section-boarder sp_only"></div>
+                        <li>
+                            <div class="works_item image_link">
+                                <a href="../works_detail/web_designcafe.html"><img src="images/works_designcafe@2x.png"
+                                        alt="モックアップ画像"></a>
+                            </div>
+                            <div class="item_text">
+                                <h3>カフェ「design cafe」</h3>
+                                <h4>LP型コーポレートサイト</h4>
+                                <div class="read-more">
+                                    <p>カフェ「design
+                                        cafe」様(架空)のLP型コーポレートサイトです。コーディングを担当しています。jQueryを利用して、画像スライドを実装しています。またレスポンシブに対応させ、スマートフォンでの閲覧の際はナビに「ハンバーガーメニュー」を実装しています。
+                                    </p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        続きを読む
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="section-boarder sp_only"></div>
+                        <li>
+                            <div class="works_item image_link">
+                                <a href="../works_detail/web_workers.html"><img src="images/works_workers@2x.png"
+                                        alt="モックアップ画像"></a>
+                            </div>
+                            <div class="item_text">
+                                <h3>コワーキングスペース「Workers」</h3>
+                                <h4>LP型コーポレートサイト</h4>
+                                <div class="read-more">
+                                    <p>コワーキングスペース「Workers」様(架空)のLP型コーポレートサイトです。デザインを担当しています。jQueryを利用して、画像スライドを実装しています。またレスポンシブに対応させ、スマートフォンでの閲覧の際はナビに「ハンバーガーメニュー」を実装しています。
+                                    </p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        続きを読む
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel"> <!--タブ(バナー広告)-->
+                    <h2>バナー広告</h2>
+                    <p>webサイトやSNSで使用するバナーの制作実績です。</p>
+                    <ul>
+                        <li>
+                            <div class="works_item image_link">
+                                <a href="../works_detail/banner_dx-burger.html"><img src="images/works_burger@2x.png"
+                                        alt="バナー画像"></a>
+                            </div>
+                            <div class="item_text">
+                                <h3>美容室「LIFE hair design」</h3>
+                                <h4>LP型コーポレートサイト</h4>
+                                <div class="read-more">
+                                    <p>美容室「LIFE
+                                        hairdesign」様(架空)のLP型コーポレートサイトです。素材集めおよびデザインまでを担当しています。メインターゲットを20代後半〜30代/女性/主婦とし、店舗のイメージカラーであるピンクを基調として落ちついた印象のサイトにしました。
+                                    </p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        続きを読む
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="section-boarder sp_only"></div>
+                        <li>
+                            <div class="works_item image_link">
+                                <a href="../works_detail/banner_trrrrip.html"><img src="images/works_ trrrrip@2x.png"
+                                        alt="バナー画像"></a>
+                            </div>
+                            <div class="item_text">
+                                <h3>カフェ「design cafe」</h3>
+                                <h4>LP型コーポレートサイト</h4>
+                                <div class="read-more">
+                                    <p>カフェ「design
+                                        cafe」様(架空)のLP型コーポレートサイトです。コーディングを担当しています。jQueryを利用して、画像スライドを実装しています。またレスポンシブに対応させ、スマートフォンでの閲覧の際はナビに「ハンバーガーメニュー」を実装しています。
+                                    </p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        続きを読む
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel"> <!--タブ(グラフィック)-->
+                    <h2>グラフィックデザイン</h2>
+                    <p>チラシや名刺・ロゴなど<br class="sp_only">グラフィックデザインの制作実績です。</p>
+                    <ul>
+                        <li>
+                            <div class="works_item coming-soon">
+                                <p>comig soon...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- フッター -->
+    <footer id="footer" class="footer">
+        <div class="footer_wrap">
+            <img src="../images/footer_logp.png" alt="HIDEO SAKURAGI PORTFOLIO">
+            <p class="copyright">©2023 HIDEO SAKURAGI</p>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            // ハンバーガーメニュー
+            $('.btn_nav, menu li').on('click', function () {
+                $('.btn_nav').toggleClass('open');
+                $('.menu').fadeToggle();
+            });
+            // タブの実装
+            $('.tab').on('click', function () {
+                $('.tab, .panel').removeClass('active');
+
+                $(this).addClass('active');
+
+                var index = $('.tab').index(this);
+                $('.panel').eq(index).addClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
